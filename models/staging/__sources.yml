@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: analytics
+    schema: dbt_avives
+    tables:
+      - name: orders
+      - name: customers
+  - name: stripe
+    database: analytics
+    schema: dbt_avives
+    tables:
+      - name: payments
